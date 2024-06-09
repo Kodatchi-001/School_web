@@ -1,12 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>School web</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
-    
+    <header class="w-full h-[8vh] lg:h-[11vh] pl-6 xl:pl-20 pr-6 xl:pr-20 flex justify-between items-center shadow-md ">
+        <h1 class=" text-xl md:text-2xl font-bold text-[#259b9b]">Lingfun</h1>
+        <ul class="hidden w-[45%] items-center justify-between h-full lg:flex">
+            <li><a href="#" class="text-lg">Course</a></li>
+            <li><a href="#" class="text-lg">About</a></li>
+            <li><a href="#" class="text-lg">Teachers</a></li>
+            <li><a href="#" class="text-lg">Reviews</a></li>
+            <li>
+                <button class="py-3 px-7 font-bold rounded bg-[#259b9b] hover:bg-[#1a4a4a] text-white" style="border-radius: 8px; transition: 0.5s ease;">
+                    Sign In
+                </button>
+            </li>
+        </ul>        
+    </header>
+    <section class=" w-full h-[82vh] lg:h-[88vh] flex justify-center flex-wrap-reverse">
+        <div class=" w-full lg:w-[40%] h-1/2 lg:h-full flex justify-center items-center ">
+            <div class=" w-full h-[60%] lg:h-[58%] gap-2 sm:gap-5 lg:gap-0 flex flex-col justify-between items-center lg:items-baseline ">
+                <h1 class="w-full sm:w-[70%] md:w-[65%] lg:w-[100%] xl:w-[90%] text-center lg:text-start text-3xl sm:text-4xl md:text-5xl xl:text-6xl font-[600] lg:leading-[8.5vh] text-[#008080]">
+                    We make language learning fun and easy</h1>
+                <p class=" w-full sm:w-[65%] md:w-[55%] lg:w-[80%] text-center lg:text-start font-[600] sm:text-xl text-[gray]">
+                    language training at Lingfun School for adults and children beginners and advanted.</p>
+                <button class="py-3 md:py-4 px-8 font-bold text-[17px] bg-[#259b9b] hover:bg-[#1a4a4a] text-white" style="border-radius: 10px;transition: 0.5s ease;">
+                    Get started
+                </button>
+            </div>
+        </div>
+        <div class=" w-full lg:w-[40%] h-1/2 lg:h-full flex justify-center items-center ">
+            <div class=" w-[58%] sm:w-[40%] md:w-[35%] lg:w-[65%] h-[85%] sm:h-[90%] lg:h-[70%] relative z-10 ">
+                <img src="Assets/image_home_Page.png" class="w-full h-full object-cover" style="border-radius: 15px;">
+            </div>
+            <div class=" hidden lg:block sm:w-[25%] sm:h-[60%] mt-[5vh] sm:mr-[-3vw] bg-[#2bceff50] absolute" style="border-radius: 15px;">
+                
+            </div>
+        </div>
+    </section>
 </body>
+
 </html>
