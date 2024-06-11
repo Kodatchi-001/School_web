@@ -30,9 +30,9 @@
     </header>
     <!-- Home/page-->
     <section class=" w-full h-[92vh] lg:h-[88vh] flex justify-center flex-wrap-reverse">
-        <div class=" w-full lg:w-[50%] xl:w-[40%] h-1/3 lg:h-full flex justify-center items-center">
+        <div class=" w-full lg:w-[50%] xl:w-[40%] h-1/2 lg:h-full flex justify-center items-center">
             <div
-                class=" w-full h-[80%] lg:h-[50%] xl:h-[58%] gap-2 sm:gap-5 lg:gap-0 flex flex-col justify-between items-center lg:items-baseline ">
+                class=" w-full h-[60%] lg:h-[50%] xl:h-[58%] gap-2 sm:gap-5 lg:gap-0 flex flex-col justify-between items-center lg:items-baseline ">
                 <h1
                     class="w-full sm:w-[70%] md:w-[65%] lg:w-full xl:w-[90%] text-center lg:text-start text-3xl sm:text-4xl md:text-5xl xl:text-6xl font-[600] lg:leading-[8.5vh] text-[#008080]">
                     We make language learning fun and easy</h1>
@@ -45,9 +45,9 @@
                 </button>
             </div>
         </div>
-        <div class=" w-full lg:w-[40%] h-2/3 lg:h-full flex justify-center items-center">
+        <div class=" w-full lg:w-[40%] h-1/2 lg:h-full flex justify-center items-center">
             <div
-                class=" w-[70%] sm:w-[40%] md:w-[35%] lg:w-[90%] xl:w-[65%] h-[80%] sm:h-[90%] lg:h-[70%] relative z-10 ">
+                class=" w-[70%] sm:w-[40%] md:w-[35%] lg:w-[90%] xl:w-[65%] h-[90%] sm:h-[90%] lg:h-[70%] relative z-10 ">
                 <img src="Assets/image_home_Page.png" class="w-full h-full object-cover" style="border-radius: 15px;">
             </div>
             <div class=" hidden xl:block sm:w-[25%] sm:h-[60%] mt-[5vh] sm:mr-[-3vw] bg-[#2bceff50] absolute"
@@ -71,9 +71,9 @@
                 <div
                     class="w-full lg:w-[15%] xl:w-[12%] flex justify-center lg:justify-around items-end text-2xl gap-5 lg:gap-1 xl:gap-0">
                     <i class='bx bx-left-arrow-alt px-3 py-3 rounded-full cursor-pointer text-[gray] icone'
-                        style="box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.299);" onclick="moveSlide(-1,this)"></i>
+                        style="box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.299);" onclick="cards_page_1(-1,this)"></i>
                     <i class='bx bx-right-arrow-alt px-3 py-3 rounded-full cursor-pointer text-[gray] icone'
-                        style="box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.299);" onclick="moveSlide(1,this)"></i>
+                        style="box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.299);" onclick="cards_page_1(1,this)"></i>
                 </div>
             </div>
             <div class="w-full md:h-[70%] flex cards gap-1 md:gap-2 pt-2 pb-2 md:pt-0 md:pb-0">
@@ -239,34 +239,39 @@
                 class="w-full lg:w-[95%] xl:w-full lg:h-[30%] flex items-center flex-wrap lg:whitespace-nowrap justify-between gap-5 lg:gap-0">
                 <div class="flex justify-center lg:justify-start flex-wrap gap-4">
                     <h1 class="w-full text-center lg:text-start text-3xl text-[#008080] font-bold">Best Teachers</h1>
-                    <p class="w-full sm:w-[50%] text-center lg:text-start text-xl text-[gray]">Our teachers are native speakers with a linguistic background</p>
+                    <p class="w-full sm:w-[50%] text-center lg:text-start text-xl text-[gray]">Our teachers are native
+                        speakers with a linguistic background</p>
                 </div>
                 <div
                     class="w-full lg:w-[15%] xl:w-[12%] flex justify-center lg:justify-around items-end text-2xl gap-5 lg:gap-1 xl:gap-0">
-                    <i class='bx bx-left-arrow-alt px-3 py-3 rounded-full cursor-pointer text-[gray]'
-                        style="box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.299);" onclick=""></i>
-                    <i class='bx bx-right-arrow-alt px-3 py-3 rounded-full cursor-pointer text-[gray]'
-                        style="box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.299);" onclick=""></i>
+                    <i class='bx bx-left-arrow-alt px-3 py-3 rounded-full cursor-pointer text-[gray] icone-2'
+                        style="box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.299);" onclick="cards_page_2(-1,this)"></i>
+                    <i class='bx bx-right-arrow-alt px-3 py-3 rounded-full cursor-pointer text-[gray] icone-2'
+                        style="box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.299);" onclick="cards_page_2(1,this)"></i>
                 </div>
             </div>
-            <div class="w-full md:h-[70%] flex cards gap-1 md:gap-2 pt-2 pb-2 md:pt-0 md:pb-0">
+            <div class="w-full md:h-[70%] flex cards-2 gap-1 md:gap-2 pt-2 pb-2 md:pt-0 md:pb-0">
                 <!--cards-1-->
                 <div
-                    class="min-w-full h-full flex flex-wrap justify-around items-center gap-2 lg:gap-0 pl-2 pr-2 sm:pl-0 sm:pr-0">
-                    <div class="w-full sm:w-[45%] lg:w-1/4 lg:h-[80%] xl:h-full flex justify-center flex-wrap p-4 gap-1">
+                    class="min-w-full h-full flex flex-wrap justify-around items-center card-slides-2 gap-2 lg:gap-0 pl-2 pr-2 sm:pl-0 sm:pr-0">
+                    <!-- card-1-->
+                    <div
+                        class="w-full sm:w-[45%] lg:w-1/4 lg:h-[80%] xl:h-full flex justify-center flex-wrap p-4 gap-1">
                         <img src="Assets/teachers(1).png" class="w-full h-3/4" style="border-radius: 10px;">
                         <div class="w-full h-[15%] flex flex-wrap items-center">
                             <h1 class="w-full text-2xl font-bold text-[#008080]">Catherine</h1>
                             <h2 class="text-xl text-gray-500">French</h2>
                         </div>
                     </div>
-                    <div class="w-full sm:w-[45%] lg:w-1/4 lg:h-[80%] xl:h-full flex flex-wrap p-4 gap-1">
-                        <img src="Assets/teachers(2).png" class="w-[90%] h-3/4" style="border-radius: 10px;">
-                        <div class="w-[90%] h-[15%] flex flex-wrap items-center">
+                    <!-- card-2-->
+                    <div class="w-full sm:w-[45%] lg:w-1/4 xl:w-[24%] lg:h-[80%] xl:h-full flex flex-wrap p-4 gap-1">
+                        <img src="Assets/teachers(2).png" class="w-full h-3/4" style="border-radius: 10px;">
+                        <div class="w-full h-[15%] flex flex-wrap items-center">
                             <h1 class="w-full text-2xl font-bold text-[#008080]">Antonio</h1>
                             <h2 class="text-xl text-gray-500">Spanish</h2>
                         </div>
                     </div>
+                    <!-- card-3-->
                     <div class="w-full sm:w-[45%] lg:w-1/4 lg:h-[80%] xl:h-full flex flex-wrap p-4 gap-1">
                         <img src="Assets/teachers(3).png" class="w-full h-3/4" style="border-radius: 10px;">
                         <div class="w-full h-[15%] flex flex-wrap items-center">
@@ -274,6 +279,7 @@
                             <h2 class="text-xl text-gray-500">Italian</h2>
                         </div>
                     </div>
+                    <!-- card-4-->
                     <div class="w-full sm:w-[45%] lg:w-1/4 lg:h-[80%] xl:h-full flex flex-wrap p-4 gap-1">
                         <img src="Assets/teachers(4).png" class="w-full h-3/4" style="border-radius: 10px;">
                         <div class="w-full h-[15%] flex flex-wrap items-center">
@@ -284,26 +290,38 @@
                 </div>
                 <!--cards-2-->
                 <div
-                    class="min-w-full h-full flex flex-wrap justify-around items-center gap-5 lg:gap-0 pl-2 pr-2 sm:pl-0 sm:pr-0">
-                    <div class="w-full sm:w-[45%] lg:w-[28%] lg:h-[80%] xl:h-full flex flex-wrap p-4 gap-1">
-                        <img src="Assets/page-1-card(1).png" class="w-full h-3/4" style="border-radius: 10px;">
+                    class="min-w-full h-full flex flex-wrap justify-around items-center card-slides-2 gap-2 lg:gap-0 pl-2 pr-2 sm:pl-0 sm:pr-0">
+                    <!-- card-1-->
+                    <div
+                        class="w-full sm:w-[45%] lg:w-1/4 lg:h-[80%] xl:h-full flex justify-center flex-wrap p-4 gap-1">
+                        <img src="Assets/teachers(5).png" class="w-full h-3/4" style="border-radius: 10px;">
                         <div class="w-full h-[15%] flex flex-wrap items-center">
-                            <h1 class="w-full text-2xl font-bold text-[#008080]">Ahmed Hariri</h1>
-                            <h2 class="text-xl">test</h2>
+                            <h1 class="w-full text-2xl font-bold text-[#008080]">Luca</h1>
+                            <h2 class="text-xl text-gray-500">History</h2>
                         </div>
                     </div>
-                    <div class="w-full sm:w-[45%] lg:w-[28%] lg:h-[80%] xl:h-full flex flex-wrap p-4 gap-1">
-                        <img src="Assets/page-1-card(1).png" class="w-full h-3/4" style="border-radius: 10px;">
+                    <!-- card-2-->
+                    <div class="w-full sm:w-[45%] lg:w-1/4 xl:w-[24%] lg:h-[80%] xl:h-full flex flex-wrap p-4 gap-1">
+                        <img src="Assets/teachers(6).png" class="w-full h-3/4" style="border-radius: 10px;">
                         <div class="w-full h-[15%] flex flex-wrap items-center">
-                            <h1 class="w-full text-2xl font-bold text-[#008080]">Ahmed Hariri</h1>
-                            <h2 class="text-xl">test</h2>
+                            <h1 class="w-full text-2xl font-bold text-[#008080]">Kenji</h1>
+                            <h2 class="text-xl text-gray-500">Chemistry</h2>
                         </div>
                     </div>
-                    <div class="w-full sm:w-[45%] lg:w-[28%] lg:h-[80%] xl:h-full flex flex-wrap p-4 gap-1">
-                        <img src="Assets/page-1-card(1).png" class="w-full h-3/4" style="border-radius: 10px;">
+                    <!-- card-3-->
+                    <div class="w-full sm:w-[45%] lg:w-1/4 lg:h-[80%] xl:h-full flex flex-wrap p-4 gap-1">
+                        <img src="Assets/teachers(7).png" class="w-full h-3/4" style="border-radius: 10px;">
                         <div class="w-full h-[15%] flex flex-wrap items-center">
-                            <h1 class="w-full text-2xl font-bold text-[#008080]">Ahmed Hariri</h1>
-                            <h2 class="text-xl">test</h2>
+                            <h1 class="w-full text-2xl font-bold text-[#008080]">John</h1>
+                            <h2 class="text-xl text-gray-500">English</h2>
+                        </div>
+                    </div>
+                    <!-- card-4-->
+                    <div class="w-full sm:w-[45%] lg:w-1/4 lg:h-[80%] xl:h-full flex flex-wrap p-4 gap-1">
+                        <img src="Assets/teachers(8).png" class="w-full h-3/4" style="border-radius: 10px;">
+                        <div class="w-full h-[15%] flex flex-wrap items-center">
+                            <h1 class="w-full text-2xl font-bold text-[#008080]">Carlos</h1>
+                            <h2 class="text-xl text-gray-500">Mathematics</h2>
                         </div>
                     </div>
                 </div>
