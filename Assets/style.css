@@ -3,6 +3,13 @@
     padding: 0;
     scroll-behavior: smooth;
 }
+header{
+    transition: 0.8s ease;
+    div:first-child,div:last-child{
+        transition: 0.8s ease;
+    }
+}
+
 .cards,.cards-2{
     transition: 0.8s ease;
 }

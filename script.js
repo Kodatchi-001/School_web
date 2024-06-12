@@ -1,3 +1,29 @@
+//navbar-responsiv
+var header = document.querySelector('header');
+var header_div = document.querySelectorAll('header div');
+var height = '15vh'
+function navbar() {
+    if (header.style.height == height) {
+        header.style.height = '';
+        header_div[0].style.height = ''
+    }
+    else {
+        header.style.height = height;
+        header_div[0].style.height = '50%'
+        navbar_link()
+    }
+}
+
+function navbar_link() {
+    const navbar_link = document.querySelectorAll('header div:last-child a')
+    navbar_link.forEach(element => {
+        element.addEventListener('click', function () {
+            header.style.height = '';
+            header_div[0].style.height = ''
+        })
+    });
+}
+
 //cards-slides
 var currentIndex1 = 0;
 var currentIndex2 = 0;
